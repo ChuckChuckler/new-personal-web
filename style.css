@@ -1,3 +1,13 @@
+@keyframes swellTitleDiv {
+    from{width: 75vw; height: 50vh;}
+    to{width: 79vw; height: 54vh;}
+}
+
+@keyframes shrinkTitleDiv {
+    to{width: 75vw; height: 50vh;}
+    from{width: 79vw; height: 54vh;}
+}
+
 body{
     cursor: url("imgs/Black-Pixel-Mouse-Cursor-Arow-Fixed.png"), auto;
     background-color: #FFE8E8;
@@ -6,21 +16,29 @@ body{
 }
 
 .title-bg{
+    --bg-angle: 0deg;
     width: 100vw;
     height: 100vh;
     background-color: #e7b8b8;
-    background-image: radial-gradient(circle, #FFEFEF, #fbb8c0);
+    background-image: linear-gradient(var(--bg-angle), #FFEFEF, #f9b0b8);
 }
 
 .title-holder{
     position: absolute;
     width: 75vw;
-    height: 25vw;
+    height: 50vh;
     background-color: white;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 21px;
+    animation: shrinkTitleDiv 0.5s ease-out;
+}
+
+.title-holder:hover{
+    width: 79vw;
+    height: 54vh;
+    animation: swellTitleDiv 0.5s ease-out;
 }
 
 h1{
