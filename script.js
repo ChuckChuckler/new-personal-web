@@ -16,7 +16,7 @@ window.onload = function(){
     nameType = setInterval(typeName, 5000);
 }
 
-function typeName(){
+function typeName(){ //types random stuff chosen from the array
     document.getElementById("title").innerText = "";
     let toType;
     if(first){
@@ -39,7 +39,7 @@ function typeName(){
 let timeout = false;
 let deg = 0;
 
-document.addEventListener("mousemove", function(e){
+document.addEventListener("mousemove", function(e){ //cursor-following gradient
     if(!timeout){
         let xPercent = e.clientX/window.innerWidth*100;
         let yPercent = e.clientY/window.innerHeight*100;
@@ -78,5 +78,55 @@ document.addEventListener("mousemove", function(e){
         wait(500).then(()=>{
             timeout=false;
         });
+    }
+});
+
+
+
+
+
+let animRunning = false;
+
+gsap.registerPlugin(ScrollTrigger,ScrollToPlugin);
+
+ScrollTrigger.create({
+    trigger: ".navigation-bg",
+    start: "top bottom",
+    end: "bottom bottom",
+    onEnter:()=>{
+        if(!animRunning){
+            animRunning = true;
+            let scroller = gsap.timeline();
+            scroller.to(window,{
+                duration: 1.5,
+                scrollTo: ".navigation-bg",
+                ease: "power3.out"
+            });
+            wait(1500).then(()=>{
+                animRunning = false;
+            });
+        }
+    }
+});
+
+ScrollTrigger.create({
+    trigger: ".title-bg",
+    start: "bottom top",
+    end: "top top",
+    onUpdate:(self)=>{
+        if(self.direction==-1){
+            if(!animRunning){
+                animRunning = true;
+                let scroller = gsap.timeline();
+                scroller.to(window,{
+                    duration: 1.5,
+                    scrollTo: ".title-bg",
+                    ease: "power3.out"
+                });
+                wait(1500).then(()=>{
+                    animRunning = false;
+                });
+            }
+        }
     }
 });

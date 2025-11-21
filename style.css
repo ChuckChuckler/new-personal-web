@@ -104,7 +104,7 @@ h1{
     background-repeat: repeat;
     background-blend-mode:lighten;
     position: relative;
-    animation: slide 20s linear infinite;
+    animation: slide 15s linear infinite;
 }
 
 .navgrid{
