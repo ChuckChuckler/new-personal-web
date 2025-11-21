@@ -9,20 +9,11 @@ function randint(min, max){
     return Math.floor((Math.random()*max-min)+min);
 }
 
-let names = ["Avishi Sharma", "Aaaaaaaaaaavishi", "Avishi Sharma", "LKJAFSDFjaslkdjfk", "Avishi Sharma", ":P"];
+let names = ["Avishi Sharma", "Aaaaaaaaaaavishi", "Avishi Sharma", "LKJAFSDFjaslkdjfk", "Avishi Sharma", ":P", "meow", "Vishi"];
 
 window.onload = function(){
     typeName();
-    typeName = setInterval(typeName, 5000);
-}
-
-document.onvisibilitychange = function(){
-    if(document.visibilityState == "hidden"){
-        clearInterval(nameType);
-    }else{
-        typeName();
-        nameType = setInterval(typeName, 5000);
-    }
+    nameType = setInterval(typeName, 5000);
 }
 
 function typeName(){
@@ -43,6 +34,7 @@ function typeName(){
     .delete(toType.length)
     .go();
 }
+
 
 let timeout = false;
 let deg = 0;
