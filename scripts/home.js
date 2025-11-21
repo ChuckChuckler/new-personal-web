@@ -9,6 +9,11 @@ function randint(min, max){
     return Math.floor((Math.random()*max-min)+min);
 }
 
+function rdrct(link){
+    window.location.href = link;
+}
+
+
 let names = ["Avishi Sharma", "Aaaaaaaaaaavishi", "Avishi Sharma", "LKJAFSDFjaslkdjfk", "Avishi Sharma", ":P", "meow", "Vishi"];
 
 window.onload = function(){
@@ -84,6 +89,8 @@ document.addEventListener("mousemove", function(e){ //cursor-following gradient
 
 
 
+//gsap animations-- scrolls, etc.
+
 
 let animRunning = false;
 
@@ -112,7 +119,7 @@ ScrollTrigger.create({
 ScrollTrigger.create({
     trigger: ".title-bg",
     start: "bottom top",
-    end: "top top",
+    end: "bottom bottom",
     onUpdate:(self)=>{
         if(self.direction==-1){
             if(!animRunning){

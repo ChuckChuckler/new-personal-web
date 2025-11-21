@@ -24,7 +24,6 @@
 }
 
 body{
-    cursor: crosshair, auto;
     background-color: #FFE8E8;
     margin: 0;
     padding: 0;
@@ -174,4 +173,31 @@ h1{
 
 .contact{
     --rotation: -2deg;
+}
+
+.navbar{
+    width: 100vw;
+    height: 75px;
+    background-color: #FFC5C5;
+    position: fixed;
+    display: flex;
+    z-index: 5;
+}
+
+.navbar-element{
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 25%;
+    text-align: center;
+}
+
+.navbar-element:hover{
+    background-color: #ed9ea7;
+}
+
+.navbar-text{
+    color: white;
+    font-family: "M PLUS 2", sans-serif;
+    text-decoration: underline;
+    font-weight: 500;
 }
