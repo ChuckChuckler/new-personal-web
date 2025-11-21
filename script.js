@@ -1,12 +1,48 @@
+let nameType;
+let first = true;
+
 function wait(ms){
     return new Promise(resolve=>setTimeout(resolve, ms));
 }
 
-window.onload = function(){
-    console.log("hello");
+function randint(min, max){
+    return Math.floor((Math.random()*max-min)+min);
 }
 
-console.log(window.innerWidth, window.innerHeight);
+let names = ["Avishi Sharma", "Aaaaaaaaaaavishi", "Avishi Sharma", "LKJAFSDFjaslkdjfk", "Avishi Sharma", ":P"];
+
+window.onload = function(){
+    typeName();
+    typeName = setInterval(typeName, 5000);
+}
+
+document.onvisibilitychange = function(){
+    if(document.visibilityState == "hidden"){
+        clearInterval(nameType);
+    }else{
+        typeName();
+        nameType = setInterval(typeName, 5000);
+    }
+}
+
+function typeName(){
+    document.getElementById("title").innerText = "";
+    let toType;
+    if(first){
+        toType="Avishi Sharma";
+        first=false;
+    }else{
+        toType = names[randint(0,names.length)];
+    }
+    new TypeIt("#title",{
+        speed: 80,
+        loop: false
+    })
+    .type(toType)
+    .pause(2000)
+    .delete(toType.length)
+    .go();
+}
 
 let timeout = false;
 let deg = 0;
@@ -42,13 +78,12 @@ document.addEventListener("mousemove", function(e){
                 deg = 135;
             }
         }
-        console.log(deg);
         gsap.to(".title-bg", {
             "--bg-angle": `${deg}deg`,
-            duration: 0.3
+            duration: 0.5
         });
         timeout=true;
-        wait(300).then(()=>{
+        wait(500).then(()=>{
             timeout=false;
         });
     }

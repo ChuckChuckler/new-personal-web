@@ -17,10 +17,17 @@ body{
 
 .title-bg{
     --bg-angle: 0deg;
+    background-image: linear-gradient(var(--bg-angle), #FFEFEF, #feabb5);
+}
+
+.section{
     width: 100vw;
     height: 100vh;
-    background-color: #e7b8b8;
-    background-image: linear-gradient(var(--bg-angle), #FFEFEF, #f9b0b8);
+    background-color: #db9b9b;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
 }
 
 .title-holder{
@@ -78,4 +85,13 @@ h1{
 .navigation-bg{
     width: 100vw;
     height: 100vh;
+}
+
+.particle{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    color: white;
+    opacity: 0.3;
 }
