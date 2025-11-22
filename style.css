@@ -96,7 +96,7 @@ h1{
     line-height: 10px;
 }
 
-.navigation-bg{
+.plaid-bg{
     background-color: #fed8d8;
     background-image: url("imgs/plaidTile.jpg");
     background-size: 350px;
@@ -187,7 +187,7 @@ h1{
 .navbar-element{
     padding-left: 30px;
     padding-right: 30px;
-    width: 25%;
+    width: 20%;
     text-align: center;
 }
 

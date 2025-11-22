@@ -1,0 +1,68 @@
+@keyframes about-me-div-1{
+    from{width: 70vw; height: 65vh}
+    to{width: 72.5vw; height: 70.25vh;}
+}
+
+@keyframes about-me-div-2{
+    to{width: 70vw; height: 65vh}
+    from{width: 72.5vw; height: 70.25vh;}
+}
+
+@keyframes about-me-border-1{
+    from{width: 72.5vw; height: 70.25vh;}
+    to{width: 76.125vw; height: 73.76vh;}
+}
+
+@keyframes about-me-border-2{
+    to{width: 72.5vw; height: 70.25vh;}
+    from{width: 76.125vw; height: 73.76vh;}
+}
+
+.about-me-section{
+    background-color: #fdb3b3;
+    background-image: url("/imgs/plaidTile.jpg");
+}
+
+.about-me-border{
+    width: 72.5vw;
+    height: 70.25vh;
+    border: 6px white solid;
+    border-radius: 150px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    animation: about-me-border-2 0.7s ease-out;
+}
+
+.about-me-border:hover{
+    animation: about-me-border-1 0.7s ease-out;
+    width: 76.125vw;
+    height: 73.76vh;
+}
+
+.about-me-title-div{
+    background-color: white;
+    width: 70vw;
+    height: 65vh;
+    border-radius:150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: about-me-div-2 0.7s ease-out;
+}
+
+.about-me-title-div:hover{
+    animation: about-me-div-1 0.7s ease-out;
+    width: 72.5vw;
+    height: 70.25vh;
+}
+
+.about-me-title{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font-size: 100px;
+}

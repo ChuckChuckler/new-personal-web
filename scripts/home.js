@@ -97,16 +97,16 @@ let animRunning = false;
 gsap.registerPlugin(ScrollTrigger,ScrollToPlugin);
 
 ScrollTrigger.create({
-    trigger: ".navigation-bg",
+    trigger: ".plaid-bg",
     start: "top bottom",
-    end: "bottom bottom",
+    end: "bottom top",
     onEnter:()=>{
         if(!animRunning){
             animRunning = true;
             let scroller = gsap.timeline();
             scroller.to(window,{
                 duration: 1.5,
-                scrollTo: ".navigation-bg",
+                scrollTo: ".scrollto",
                 ease: "power3.out"
             });
             wait(1500).then(()=>{
