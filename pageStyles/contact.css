@@ -1,3 +1,13 @@
+@keyframes contact-card-1{
+    from{height: 150px; width: 45%; box-shadow: none;}
+    to{height: 155px; width: 48%; box-shadow: 0px 0px 20px 10px rgb(244, 181, 181);}
+}
+
+@keyframes contact-card-2{
+    to{height: 150px; width: 45%; box-shadow: none;}
+    from{height: 155px; width: 48%; box-shadow: 0px 0px 20px 10px rgb(244, 181, 181);}
+}
+
 .contact-title{
     font-weight: 500;
     font-size: 60px;
@@ -40,6 +50,15 @@ hr{
     border-radius: 34px;
     display: grid;
     grid-template-columns: 25% 75%;
+    box-shadow: none;
+    animation: contact-card-2 0.5s ease-out;
+}
+
+.contact-card:hover{
+    height: 155px;
+    width: 48%;
+    box-shadow: 0px 0px 20px 10px rgb(244, 181, 181);
+    animation: contact-card-1 0.5s ease-out;
 }
 
 .contact-icon{

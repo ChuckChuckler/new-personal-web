@@ -9,3 +9,7 @@ function randint(min, max){
 function rdrct(link){
     window.location.href = link;
 }
+
+function newTabRdrct(link){
+    window.open(link, "_blank");
+}
