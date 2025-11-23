@@ -43,6 +43,16 @@
     from{width: 94%; height: 94%;}
 }
 
+@keyframes fade-1{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes fade-2{
+    to{opacity: 0;}
+    from{opacity: 1;}
+}
+
 .about-me-section{
     background-color: #fdb3b3;
     background-image: url("/imgs/plaidTile.jpg");
@@ -97,7 +107,7 @@
     position: absolute;
     bottom: 20px;
     height: 80vh;
-    overflow: auto;
+    overflow-y: auto;
     width: 100%;
 }
 
@@ -109,6 +119,7 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
+    overflow-x: hidden;
 }
 
 .img-border{
@@ -127,6 +138,7 @@
 .img-holder{
     position: relative;
     width: 23%;
+    right: 400px
 }
 
 .img{
@@ -150,6 +162,8 @@
     border-radius: 40px;
     border: 3px white solid;
     animation: about-me-info-2 0.7s ease-out;
+    position: relative;
+    left: 1000px;
 }
 
 .about-me-info:hover{
@@ -175,12 +189,12 @@
 }
 
 .hobbies-divider{
-    width: 35%;
+    width: 0%;
     border: 2px #4F4560 solid;
 }
 
 .hobbies-holder{
-    width: 90%;
+    width: 1%;
     background-color: #F4C3C3;
     height: 60vh;
     margin: auto;
@@ -199,6 +213,7 @@
     border-radius: 26px;
     position: relative;
     animation: hobby-2 0.5s ease-out;
+    opacity: 0;
 }
 
 .hobby:hover{
@@ -214,4 +229,20 @@
     transform: translate(-50%, -40%);
     color: black;
     font-family: "M PLUS 1p", sans-serif;
+
+}
+
+.hobby-desc{
+    width: 90%;
+    font-weight: 600;
+    opacity: 0;
+    animation: fade-2 0.5s ease-out;
+    background-color: white;
+    height: 90%;
+    overflow: auto;
+}
+
+.hobby-desc:hover{
+    opacity: 1;
+    animation: fade-1 0.5s ease-out;
 }
