@@ -33,6 +33,16 @@
     from{width: 69%; height: 77vh;}
 }
 
+@keyframes hobby-1{
+    from{width: 90%; height: 90%;}
+    to{width: 94%; height: 94%;}
+}
+
+@keyframes hobby-2{
+    to{width: 90%; height: 90%;}
+    from{width: 94%; height: 94%;}
+}
+
 .about-me-section{
     background-color: #fdb3b3;
     background-image: url("/imgs/plaidTile.jpg");
@@ -83,7 +93,15 @@
     width: 100%;
 }
 
-.about-me-text{
+.navbar-cropped{
+    position: absolute;
+    bottom: 20px;
+    height: 80vh;
+    overflow: auto;
+    width: 100%;
+}
+
+.navbar-cropped-relative{
     position: relative;
 }
 
@@ -91,10 +109,6 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
-    position: absolute;
-    bottom: 20px;
-    height: 80vh;
-    overflow: auto;
 }
 
 .img-border{
@@ -149,4 +163,55 @@
     font-family: "M PLUS 1p", sans-serif;
     font-size: 20px;
     font-weight: 500;
+}
+
+.hobbies-div{
+    margin-top: 20vh;
+}
+
+.hobbies-title{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.hobbies-divider{
+    width: 35%;
+    border: 2px #4F4560 solid;
+}
+
+.hobbies-holder{
+    width: 90%;
+    background-color: #F4C3C3;
+    height: 60vh;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 38px;
+    border: 3px white solid;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.hobby{
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    border-radius: 26px;
+    position: relative;
+    animation: hobby-2 0.5s ease-out;
+}
+
+.hobby:hover{
+    width: 94%;
+    height: 94%;
+    animation: hobby-1 0.5s ease-out;
+}
+
+.hobby-text{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -40%);
+    color: black;
+    font-family: "M PLUS 1p", sans-serif;
 }
