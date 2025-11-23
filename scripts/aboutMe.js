@@ -94,12 +94,20 @@ ScrollTrigger.create({
     onEnter:()=>{
         if(!animRunning){
             animRunning = true;
+            new TypeIt(".hobbies-title",{
+                speed: 50,
+                loop: false
+            }).go();
             let scroller = gsap.timeline();
             scroller.to(window,{
                 duration: 1.5,
                 scrollTo: ".hobbies",
                 ease: "power3.out"
             })
+            scroller.to(".hobbies-title",{
+                duration: 1,
+                opacity: 1
+            },"<")
             scroller.to(".img-holder",{
                 duration: 1.5,
                 right: "400px",
@@ -145,6 +153,10 @@ ScrollTrigger.create({
                     scrollTo: ".about-me-text",
                     ease: "power3.out"
                 })
+                scroller.to(".hobbies-title",{
+                    duration: 1,
+                    opacity: 0
+                },"<")
                 scroller.to(".img-holder",{
                     duration: 1.5,
                     right: 0,
