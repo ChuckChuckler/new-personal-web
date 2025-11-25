@@ -18,6 +18,16 @@
     from{width: 76.125vw; height: 73.76vh;}
 }
 
+@keyframes icon-1{
+    from{width: 80px; height: 80px}
+    to{width: 87px; height: 87px}
+}
+
+@keyframes icon-2{
+    to{width: 80px; height: 80px}
+    from{width: 87px; height: 87px}
+}
+
 
 .experience-border{
     width: 72.5vw;
@@ -71,8 +81,68 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    border-radius: 200px;
+    overflow-x: auto;
+}
+
+.array-1{
+    top: 40px;
 }
 
 .array-2{
-    bottom: 15px;
+    bottom: 40px;
+}
+
+.icon{
+    width: 80px;
+    height: 80px;
+    animation: icon-2 0.5s ease-out;
+}
+
+.icon:hover{
+    width: 87px;
+    height: 87px;
+    animation: icon-1 0.5s ease-out;
+}
+
+.img-holder{
+    display: grid;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.holder-1{
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+}
+
+.holder-2{
+    grid-template-columns: auto auto auto auto auto auto auto;
+    width: 65%;
+}
+
+.skill{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    color: black;
+    font-size: 30px;
+    font-family: "M PLUS 1p", sans-serif;
+}
+
+.subtitle{
+     font-family: "M PLUS 2", sans-serif;
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     font-size: 25px;
+}
+
+.subtitle-1{
+    top: -25px;
+}
+
+.subtitle-2{
+    bottom: -25px;
 }

@@ -9,3 +9,14 @@ function randint(min, max){
 function rdrct(link){
     window.location.href = link;
 }
+
+function hover(text){
+    document.getElementById("skill").innerText = text;
+}
+
+
+
+//gsap animations
+
+//gsap.registerPlugin()
+
