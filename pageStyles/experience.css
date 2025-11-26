@@ -28,6 +28,16 @@
     from{width: 87px; height: 87px}
 }
 
+@keyframes hackathon-ysws-1{
+    from{height: 80px;}
+    to{height: 85px;}
+}
+
+@keyframes hackathon-ysws-2{
+    to{height: 80px;}
+    from{height: 85px;}
+}
+
 
 .experience-border{
     width: 72.5vw;
@@ -97,19 +107,19 @@
 }
 
 .array-border-1{
-    top: 35px;
+    top: 55px;
 }
 
 .array-border-2{
-    bottom: 35px;
+    bottom: 55px;
 }
 
 .array-1{
-    top: 40px;
+    top: 60px;
 }
 
 .array-2{
-    bottom: 40px;
+    bottom: 60px;
 }
 
 .icon{
@@ -151,19 +161,21 @@
 }
 
 .subtitle{
-     font-family: "M PLUS 2", sans-serif;
-     position: absolute;
-     left: 50%;
-     transform: translateX(-50%);
-     font-size: 25px;
+    font-family: "M PLUS 2", sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
 }
 
 .subtitle-1{
-    top: -25px;
+    top: -15px;
 }
 
 .subtitle-2{
-    bottom: -25px;
+    bottom: -15px;
 }
 
 .experience-holder{
@@ -173,20 +185,58 @@
     border-radius: 18px;
     border: 2px white solid;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .subholder{
     background-color: white;
     height: 100%;
+    border-radius: 27px;
 }
 
 .subholder-1{
-    width: 70%;
+    width: 69%;
 }
 
 .subholder-2{
-    width: 25%;
+    width: 30%;
+}
+
+.subholder-heading{
+    font-size: 28px;
+    font-family: "Pixelify Sans", sans-serif;
+    color: #4F4560;
+    text-align: center;
+}
+
+.hackathon-ysws{
+    height: 80px;
+    animation: hackathon-ysws-2 0.5s ease-out;
+}
+
+.hackathon-ysws:hover{
+    height: 85px;
+    animation: hackathon-ysws-1 0.5s ease-out;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.subholder{
+    overflow: auto;
+}
+
+.other-experience{
+    font-size: 20px;
+    font-family: "M Plus 1p", sans-serif;
+    font-weight: 500;
 }

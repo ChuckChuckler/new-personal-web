@@ -206,7 +206,6 @@ h1{
     position: absolute;
     bottom: 20px;
     height: 80vh;
-    overflow-y: auto;
     width: 100%;
 }
 
