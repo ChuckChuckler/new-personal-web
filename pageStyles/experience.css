@@ -85,6 +85,25 @@
     overflow-x: auto;
 }
 
+.array-border{
+    width: 81%;
+    height: 128px;
+    background-color: transparent;
+    border: 2px white solid;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 200px;
+}
+
+.array-border-1{
+    top: 35px;
+}
+
+.array-border-2{
+    bottom: 35px;
+}
+
 .array-1{
     top: 40px;
 }
@@ -145,4 +164,29 @@
 
 .subtitle-2{
     bottom: -25px;
+}
+
+.experience-holder{
+    background-color: #F0C2C2;
+    width: 85%;
+    height: 70vh;
+    border-radius: 18px;
+    border: 2px white solid;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.subholder{
+    background-color: white;
+    height: 100%;
+}
+
+.subholder-1{
+    width: 70%;
+}
+
+.subholder-2{
+    width: 25%;
 }
