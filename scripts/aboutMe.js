@@ -101,7 +101,7 @@ ScrollTrigger.create({
             let scroller = gsap.timeline();
             scroller.to(window,{
                 duration: 1.5,
-                scrollTo: ".hobbies",
+                scrollTo: ".scrollto",
                 ease: "power3.out"
             })
             scroller.to(".hobbies-title",{
