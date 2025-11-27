@@ -18,10 +18,26 @@ function hover(text){
     document.getElementById("skill").innerText = text;
 }
 
+function hover2(text){
+    document.getElementById("hackathonYswsDisplay").innerText = text;
+}
+
+window.onload = function(){
+    new TypeIt(".experience-title",{
+        speed: 80,
+        loop: false
+    }).go();
+    let hackathonsArray =  document.getElementsByClassName("hackathon-ysws");
+    for(let i = 0; i < hackathonsArray.length;i++){
+        hackathonsArray[i].addEventListener("mouseleave", ()=>{
+            hover2("");
+        });
+    }
+}
+
 
 
 //gsap animations
-
 
 let animRunning = false;
 
@@ -40,6 +56,16 @@ ScrollTrigger.create({
                 scrollTo: ".skills",
                 ease: "power3.out"
             })
+            scroller.to(".array",{
+                width:"80%",
+                duration: 1.5,
+                ease: "power3.out"
+            },"<")
+            scroller.to(".array-border",{
+                width:"81%",
+                duration: 1.5,
+                ease: "power3.out"
+            },"<")
             wait(1500).then(()=>{
                 animRunning = false;
             });
@@ -55,12 +81,26 @@ ScrollTrigger.create({
         if(self.direction==-1){
             if(!animRunning){
                 animRunning = true;
+                new TypeIt(".experience-title",{
+                    speed: 80,
+                    loop: false
+                }).go();
                 let scroller = gsap.timeline();
                 scroller.to(window,{
                     duration: 1.5,
                     scrollTo: ".plaid-bg",
                     ease: "power3.out"
                 })
+                scroller.to(".array",{
+                    width:"1%",
+                    duration: 1.5,
+                    ease: "power3.out"
+                },"<")
+                scroller.to(".array-border",{
+                    width:"2%",
+                    duration: 1.5,
+                    ease: "power3.out"
+                },"<")
                 wait(1500).then(()=>{
                     animRunning = false;
                 });
@@ -72,16 +112,31 @@ ScrollTrigger.create({
 ScrollTrigger.create({
     trigger: ".hackathon-ysws-holder",
     start: "top bottom",
-    end: "bottom top",
+    end: "bottom bottom",
     onEnter:()=>{
         if(!animRunning){
             animRunning = true;
             let scroller = gsap.timeline();
             scroller.to(window,{
                 duration: 1.5,
-                scrollTo: ".hackathon-ysws-holder",
+                scrollTo: ".endScroll",
                 ease: "power3.out"
             })
+            scroller.to(".array",{
+                width:"1%",
+                duration: 1.5,
+                ease: "power3.out"
+            },"<")
+            scroller.to(".array-border",{
+                width:"2%",
+                duration: 1.5,
+                ease: "power3.out"
+            },"<")
+            scroller.to(".experience-holder",{
+                width:"85%",
+                duration:1.5,
+                ease: "power3.out"
+            },"<")
             wait(1500).then(()=>{
                 animRunning = false;
             });
@@ -103,6 +158,21 @@ ScrollTrigger.create({
                     scrollTo: ".skills",
                     ease: "power3.out"
                 })
+                scroller.to(".array",{
+                    width:"80%",
+                    duration: 1.5,
+                    ease: "power3.out"
+                },"<")
+                scroller.to(".array-border",{
+                    width:"81%",
+                    duration: 1.5,
+                    ease: "power3.out"
+                },"<")
+                scroller.to(".experience-holder",{
+                    width:"2%",
+                    duration:1.5,
+                    ease: "power3.out"
+                },"<")
                 wait(1500).then(()=>{
                     animRunning = false;
                 });

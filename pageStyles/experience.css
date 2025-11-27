@@ -85,7 +85,7 @@
 }
 
 .array{
-    width: 80%;
+    width: 1%;
     height:119px;
     background-color: white;
     position: absolute;
@@ -96,7 +96,7 @@
 }
 
 .array-border{
-    width: 81%;
+    width: 2%;
     height: 128px;
     background-color: transparent;
     border: 2px white solid;
@@ -180,7 +180,7 @@
 
 .experience-holder{
     background-color: #F0C2C2;
-    width: 85%;
+    width: 2%;
     height: 70vh;
     border-radius: 18px;
     border: 2px white solid;
@@ -239,4 +239,17 @@
     font-size: 20px;
     font-family: "M Plus 1p", sans-serif;
     font-weight: 500;
+}
+
+.endScroll{
+    height: 2vh;
+    position: relative;
+}
+
+.hackathon-ysws-display{
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "M Plus 2";
 }
