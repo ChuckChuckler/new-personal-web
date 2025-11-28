@@ -31,7 +31,7 @@
     <div class="section plaid-bg">
         <div class="projects-border">
             <div class="projects-title-div">
-                <h1 class="projects-title">Projects</h1>
+                <h1 class="projects-title">Featured Projects</h1>
             </div>
         </div>
     </div>
@@ -39,7 +39,7 @@
         <div class="navbar-cropped project-bg">
             <br>
             <div class="project-navigation">
-                 <button class="nav nav-left" id="navLeft">&lt;&lt;</button>
+                <button class="nav nav-left" id="navLeft" onclick="updateCarousel('left')">&lt;&lt;</button>
                 <div class="project-holder">
                     <h1 class="project-name" id="projectName">Project Name</h1>
                     <div class="project-flex">
@@ -48,11 +48,17 @@
                             <p class="project-desc" id="projectDesc">
                                 hi this is my very cool project ihope u lik eit
                             </p>
-                            <h4 class="tech-stack" id="techStack">Tech Stack: good question</h4>
+                            <h4 class="tech-stack" id="status">Project Status: completed iguess</h4>
+                            <h4 class="time-taken" id="timeTaken">Time: </h4>
+                            <ul>
+                                <h4 class="tech-stack">Tech Stack</h4>
+                                <h5 class="frontend" id="frontend"></h5>
+                                <h5 class="backend" id="backend"></h5>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <button class="nav nav-right" id="navRight">&gt;&gt;</button>
+                <button class="nav nav-right" id="navRight" onclick="updateCarousel('right')">&gt;&gt;</button>
             </div>
         </div>
     </div>

@@ -73,7 +73,7 @@
 }
 
 .nav{
-    height: 100%;
+    height: 400px;
     width:10%;
     border: 0px transparent;
 }
@@ -91,18 +91,19 @@
 .project-holder{
     background-color: white;
     width: 80%;
+    height: 400px;
     box-sizing: border-box;
     padding: 10px;
 }
 
 .project-flex{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 80%;
 }
 
 .project-preview{
-    width: 40%;
+    width: 325px;
     object-fit:cover;
 }
 
@@ -111,7 +112,7 @@
 }
 
 .project-text{
-    width: 60%;
+    width: 48%;
 }
 
 .project-name{
