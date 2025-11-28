@@ -101,8 +101,10 @@ function updateCarousel(direction){
     document.getElementById("projectDesc").innerText = projects[index].desc;
     document.getElementById("status").innerText = projects[index].status;
     document.getElementById("timeTaken").innerText = `Time Taken: ${projects[index].time}`;
-    document.getElementById("frontend").innerText = `Frontend: ${projects[index].techStack.frontend}`
-    document.getElementById("backend").innerText = `Backend: ${projects[index].techStack.backend}`
+    document.getElementById("frontend").innerText = `Frontend: ${projects[index].techStack.frontend}`;
+    document.getElementById("backend").innerText = `Backend: ${projects[index].techStack.backend}`;
+    document.getElementById("repo").onclick = function(){newTabRdrct(projects[index].github)};
+    document.getElementById("demo").onclick = function(){newTabRdrct(projects[index].demo)};
 }
 
 let index = 0;
