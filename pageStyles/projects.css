@@ -1,0 +1,129 @@
+@keyframes projects-div-1{
+    from{width: 70vw; height: 65vh}
+    to{width: 72.5vw; height: 70.25vh;}
+}
+
+@keyframes projects-div-2{
+    to{width: 70vw; height: 65vh}
+    from{width: 72.5vw; height: 70.25vh;}
+}
+
+@keyframes projects-border-1{
+    from{width: 72.5vw; height: 70.25vh;}
+    to{width: 76.125vw; height: 73.76vh;}
+}
+
+@keyframes projects-border-2{
+    to{width: 72.5vw; height: 70.25vh;}
+    from{width: 76.125vw; height: 73.76vh;}
+}
+
+
+.projects-border{
+    width: 72.5vw;
+    height: 70.25vh;
+    border: 6px white solid;
+    border-radius: 150px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    animation: projects-border-2 0.7s ease-out;
+}
+
+.projects-border:hover{
+    animation: projects-border-1 0.7s ease-out;
+    width: 76.125vw;
+    height: 73.76vh;
+}
+
+.projects-title-div{
+    background-color: white;
+    width: 70vw;
+    height: 65vh;
+    border-radius:150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: projects-div-2 0.7s ease-out;
+}
+
+.projects-title-div:hover{
+    animation: projects-div-1 0.7s ease-out;
+    width: 72.5vw;
+    height: 70.25vh;
+}
+
+.projects-title{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font-size: 100px;
+    width: 100%;
+}
+
+.project-navigation{
+    display: flex;
+    justify-content: space-around;
+    height: 75vh;
+    width: 95%;
+    margin: auto;
+}
+
+.nav{
+    height: 100%;
+    width:10%;
+    border: 0px transparent;
+}
+
+.nav-left{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.nav-right{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.project-holder{
+    background-color: white;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.project-flex{
+    display: flex;
+    justify-content: space-around;
+    height: 80%;
+}
+
+.project-preview{
+    width: 40%;
+    object-fit:cover;
+}
+
+.project-name{
+    text-align: center;
+}
+
+.project-text{
+    width: 60%;
+}
+
+.project-name{
+    font-size: 50px;
+}
+
+.project-desc{
+    font-size: 18px;
+    font-family: "M Plus 1p", sans-serif;
+}
+
+.tech-stack{
+    font-size: 20px;
+    font-family: "M Plus 2", sans-serif;
+}
