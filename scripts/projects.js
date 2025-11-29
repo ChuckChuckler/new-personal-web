@@ -14,13 +14,13 @@ function newTabRdrct(link){
     window.open(link, "_blank");
 }
 
-let projects = [
+let featuredProjects = [
     {
         name: "DailyCode",
         preview: "/imgs/previews/dailyCodePreview.png",
         desc: "A web app where a daily (although weekly is more feasible) coding prompt is displayed. Users can create accounts and upload projects that they have made adhering to that prompt (games, websites, anything); they can vote on or comment on others' projects as well.",
         status: "Incomplete/WIP-- started May 2025",
-        time: "32hrs",
+        time: "32hrs so far",
         techStack:{
             frontend: "React/Vite, React Router, Tailwind, Axios",
             backend: "Node/Express, MongoDB, Crypto, Multer, Nodemailer"
@@ -82,29 +82,33 @@ let projects = [
     }
 ]
 
+/*let otherProjects = [
+    {}
+]*/
+
 function updateCarousel(direction){
     if(direction=="right"){
-        if(index==projects.length-1){
+        if(index==featuredProjects.length-1){
             index=0;
         }else{
             index+=1;
         }
     }else if(direction=="left"){
         if(index==0){
-            index=projects.length-1;
+            index=featuredProjects.length-1;
         }else{
             index-=1;
         }
     }
-    document.getElementById("projectName").innerText = projects[index].name;
-    document.getElementById("projectPreview").src = projects[index].preview;
-    document.getElementById("projectDesc").innerText = projects[index].desc;
-    document.getElementById("status").innerText = projects[index].status;
-    document.getElementById("timeTaken").innerText = `Time Taken: ${projects[index].time}`;
-    document.getElementById("frontend").innerText = `Frontend: ${projects[index].techStack.frontend}`;
-    document.getElementById("backend").innerText = `Backend: ${projects[index].techStack.backend}`;
-    document.getElementById("repo").onclick = function(){newTabRdrct(projects[index].github)};
-    document.getElementById("demo").onclick = function(){newTabRdrct(projects[index].demo)};
+    document.getElementById("projectName").innerText = featuredProjects[index].name;
+    document.getElementById("projectPreview").src = featuredProjects[index].preview;
+    document.getElementById("projectDesc").innerText = featuredProjects[index].desc;
+    document.getElementById("status").innerText = featuredProjects[index].status;
+    document.getElementById("timeTaken").innerText = `Time Taken: ${featuredProjects[index].time}`;
+    document.getElementById("frontend").innerText = `Frontend: ${featuredProjects[index].techStack.frontend}`;
+    document.getElementById("backend").innerText = `Backend: ${featuredProjects[index].techStack.backend}`;
+    document.getElementById("repo").onclick = function(){newTabRdrct(featuredProjects[index].github)};
+    document.getElementById("demo").onclick = function(){newTabRdrct(featuredProjects[index].demo)};
 }
 
 let index = 0;
