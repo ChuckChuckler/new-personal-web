@@ -48,7 +48,7 @@ let featuredProjects = [
         status: "Complete-- Jan 2025",
         time: "19hrs",
         techStack:{
-            frontend: "HTML, CSS, JS",
+            frontend: "HTML, CSS, JS, GSAP",
             backend: "None"
         },
         github: "https://github.com/ChuckChuckler/personalwebsite",
@@ -71,7 +71,7 @@ let featuredProjects = [
         name: "Matter Classification",
         preview: "/imgs/previews/classifyPreview.png",
         desc: "A simple drag-and-drop chemistry game about classifying types of matter.",
-        status: "Complete-- Jan 2023",
+        status: "Complete-- Jan 2025",
         time:"12hrs",
         techStack:{
             frontend: "HTML, CSS, JS",
@@ -86,7 +86,7 @@ let otherProjects = [
     {
         name: "Complexes",
         preview: "/imgs/otherProjects/complexes.png",
-        desc: "A 2D platformer where users answer personality quiz-style questions, then fight a boss that changes according to their answers. Made for Parthenon.\n\nVery Unfinished-- started Nov 2025\n\nTech Stack: Godot/GDScript\n\nAll art made by @iisalut on Github",
+        desc: "A 2D platformer where users answer personality quiz-style questions, then fight a boss that changes according to their answers. Made for Parthenon.\n\nVery Unfinished-- started Nov 2025\n\nTech Stack: Godot/GDScript\n\nBoss sprites made by @iisalut on Github",
         repo: "https://github.com/iisalut/Actual_athena",
         demo: "https://avishi33sharma.itch.io/complexes"
     },
@@ -239,7 +239,13 @@ function updateCarousel(direction){
 let index = 0;
 
 window.onload = function(){
+    new TypeIt(".projects-title",{
+        speed: 80,
+        loop: false
+    }).go();
+
     updateCarousel();
+
     for(let i = 0; i < otherProjects.length; i++){
         let toClone = document.getElementById("card");
         let clone = toClone.cloneNode(true);
@@ -254,3 +260,121 @@ window.onload = function(){
     }
     document.getElementById("projectGrid").removeChild(document.getElementById("card"));
 }
+
+//gsap animations
+
+let animRunning = false;
+
+ScrollTrigger.create({
+    trigger: ".project-bg-outer",
+    start: "top bottom",
+    end: "bottom top",
+    onEnter:()=>{
+        if(!animRunning){
+            animRunning = true;
+            let scroller = gsap.timeline();
+            scroller.to(window,{
+                duration: 1.5,
+                scrollTo: ".project-bg-outer",
+                ease: "power3.out"
+            })
+            scroller.to(".project-navigation",{
+                duration: 1.5,
+                width: "95%",
+                ease: "power3.out"
+            },"<")
+            wait(1500).then(()=>{
+                animRunning = false;
+            });
+        }
+    }
+});
+
+ScrollTrigger.create({
+    trigger: ".plaid-bg",
+    start: "bottom top",
+    end: "bottom bottom",
+    onUpdate:(self)=>{
+        if(self.direction==-1){
+            if(!animRunning){
+                animRunning = true;
+                let scroller = gsap.timeline();
+                scroller.to(window,{
+                    duration: 1.5,
+                    scrollTo: ".plaid-bg",
+                    ease: "power3.out"
+                })
+                scroller.to(".project-navigation",{
+                    duration: 1.5,
+                    width: "1%",
+                    ease: "power3.out"
+                },"<")
+                wait(1500).then(()=>{
+                    animRunning = false;
+                });
+            }
+        }
+    }
+});
+
+ScrollTrigger.create({
+    trigger: ".other-projects-outer",
+    start: "top bottom",
+    end: "bottom top",
+    onEnter:()=>{
+        if(!animRunning){
+            animRunning = true;
+            let scroller = gsap.timeline();
+            scroller.to(window,{
+                duration: 1.5,
+                scrollTo: ".scrollto",
+                ease: "power3.out"
+            })
+            scroller.to(".project-grid",{
+                opacity: 1,
+                duration: 1.5,
+                ease: "power3.out"
+            },"<")
+            scroller.to(".project-navigation",{
+                duration: 1.5,
+                width: "1%",
+                ease: "power3.out"
+            },"<")
+            wait(1500).then(()=>{
+                animRunning = false;
+            });
+        }
+    }
+});
+
+ScrollTrigger.create({
+    trigger: ".project-bg",
+    start: "bottom top",
+    end: "bottom bottom",
+    onUpdate:(self)=>{
+        if(self.direction==-1){
+            if(!animRunning){
+                animRunning = true;
+                let scroller = gsap.timeline();
+                scroller.to(window,{
+                    duration: 1.5,
+                    scrollTo: ".project-bg-outer",
+                    ease: "power3.out"
+                })
+                scroller.to(".project-navigation",{
+                    duration: 1.5,
+                    width: "95%",
+                    ease: "power3.out"
+                },"<")
+                scroller.to(".project-grid",{
+                    opacity: 0,
+                    duration: 1.5,
+                    ease: "power3.out"
+                },"<")
+                wait(1500).then(()=>{
+                    animRunning = false;
+                });
+            }
+        }
+    }
+});

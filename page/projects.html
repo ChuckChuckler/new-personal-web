@@ -35,7 +35,7 @@
             </div>
         </div>
     </div>
-    <div class="section navbar-cropped-relative">
+    <div class="section navbar-cropped-relative project-bg-outer">
         <div class="navbar-cropped project-bg">
             <h2 class="header">☆ Featured Projects ☆</h2>
             <div class="project-navigation">
@@ -45,16 +45,19 @@
                     <div class="project-flex">
                         <img class="project-preview" id="projectPreview">
                         <div class="project-text">
-                            <p class="project-desc" id="projectDesc">
-                                hi this is my very cool project ihope u lik eit
-                            </p>
-                            <h4 class="tech-stack" id="status">Project Status: completed iguess</h4>
-                            <h4 class="tech-stack time-taken" id="timeTaken">Time: </h4>
-                            <h4 class="tech-stack">Tech Stack</h4>
-                            <ul>
-                                <h5 class="end frontend" id="frontend"></h5>
-                                <h5 class="end backend" id="backend"></h5>
-                            </ul>
+                            <div class="project-inner-text">
+                                <p class="project-desc" id="projectDesc">
+                                    hi this is my very cool project ihope u lik eit
+                                </p>
+                                <h4 class="tech-stack" id="status">Project Status: completed iguess</h4>
+                                <h4 class="tech-stack time-taken" id="timeTaken">Time: </h4>
+                                <h4 class="tech-stack">Tech Stack</h4>
+                                <ul>
+                                    <h5 class="end frontend" id="frontend"></h5>
+                                    <h5 class="end backend" id="backend"></h5>
+                                </ul>
+                            </div>
+                            <br>
                             <div class="button-flex">
                                 <button class="project-button" id="repo">Repo</button>
                                 <button class="project-button" id="demo">Demo</button>
@@ -66,7 +69,7 @@
             </div>
         </div>
     </div>
-    <div class="section navbar-cropped-relative">
+    <div class="section navbar-cropped-relative other-projects-outer">
         <div class="navbar-cropped other-projects">
             <h2 class="header">♪ Other Projects ♪</h2>
             <div class="project-grid" id="projectGrid">
@@ -85,6 +88,12 @@
             </div>
         </div>
     </div>
+    <br>
+    <div class="scrollto"></div>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
     <script src="/scripts/projects.js"></script>
 </body>
 </html>
