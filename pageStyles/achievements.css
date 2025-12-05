@@ -1,0 +1,133 @@
+@keyframes achievements-div-1{
+    from{width: 70vw; height: 65vh}
+    to{width: 72.5vw; height: 70.25vh;}
+}
+
+@keyframes achievements-div-2{
+    to{width: 70vw; height: 65vh}
+    from{width: 72.5vw; height: 70.25vh;}
+}
+
+@keyframes achievements-border-1{
+    from{width: 72.5vw; height: 70.25vh;}
+    to{width: 76.125vw; height: 73.76vh;}
+}
+
+@keyframes achievements-border-2{
+    to{width: 72.5vw; height: 70.25vh;}
+    from{width: 76.125vw; height: 73.76vh;}
+}
+
+.achievements-border{
+    width: 72.5vw;
+    height: 70.25vh;
+    border: 6px white solid;
+    border-radius: 150px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    animation: achievements-border-2 0.7s ease-out;
+}
+
+.achievements-border:hover{
+    animation: achievements-border-1 0.7s ease-out;
+    width: 76.125vw;
+    height: 73.76vh;
+}
+
+.achievements-title-div{
+    background-color: white;
+    width: 70vw;
+    height: 65vh;
+    border-radius:150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: achievements-div-2 0.7s ease-out;
+}
+
+.achievements-title-div:hover{
+    animation: achievements-div-1 0.7s ease-out;
+    width: 72.5vw;
+    height: 70.25vh;
+}
+
+.achievements-title{
+    position: absolute;
+    top: 40%;    row-gap: auto;
+    justify-content: space-between;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font-size: 100px;
+    width: 100%;
+}
+
+.holder{
+    background-color: rgb(247, 201, 201);
+    width: 80%;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    border-radius: 25px;
+    border: 1.5px white solid;
+    display: flex;
+}
+
+.icon-grid{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    height: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+hr{
+    border: rgb(255, 255, 255) 1px dashed;
+    width: 95%;
+}
+
+.icon{
+    width: 12vh;
+    height: 12vh;
+}
+
+.achievement-grid{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    width: 100%;
+    row-gap: 5px;
+}
+
+.achievement-row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    align-items: center;
+    height: 26vh;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.achievement{
+    border: 1px white dashed;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 20px;
+    height: 10vh;
+    background-color: rgb(234, 180, 180);
+}
+
+.achievement-txt{
+    font-size: 1.3vw;
+    text-align: center;
+    font-family: "M Plus 1p", sans-serif;
+}
+
+.row-alternate{
+    background-color: rgb(240, 190, 190);
+}
