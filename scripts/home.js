@@ -106,7 +106,7 @@ ScrollTrigger.create({
             let scroller = gsap.timeline();
             scroller.to(window,{
                 duration: 1.5,
-                scrollTo: ".scrollto",
+                scrollTo: ".endScroll",
                 ease: "power3.out"
             });
             wait(1500).then(()=>{
