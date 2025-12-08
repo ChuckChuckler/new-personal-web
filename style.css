@@ -179,7 +179,7 @@ h1{
 
 .navbar{
     width: 100vw;
-    height: 75px;
+    height: 12vh;
     background-color: #FFC5C5;
     position: fixed;
     display: flex;
@@ -191,6 +191,7 @@ h1{
     padding-right: 30px;
     width: 20%;
     text-align: center;
+    align-content: center;
 }
 
 .navbar-element:hover{
@@ -201,7 +202,7 @@ h1{
     color: white;
     font-family: "M PLUS 2", sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.7vw;
 }
 
 .navbar-cropped{
