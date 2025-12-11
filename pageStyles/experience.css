@@ -19,23 +19,23 @@
 }
 
 @keyframes icon-1{
-    from{width: 80px; height: 80px}
-    to{width: 87px; height: 87px}
+    from{width: 12vh; height: 12vh}
+    to{width: 14vh; height: 14vh}
 }
 
 @keyframes icon-2{
-    to{width: 80px; height: 80px}
-    from{width: 87px; height: 87px}
+    to{width: 12vh; height: 12vh}
+    from{width: 14vh; height: 14vh}
 }
 
 @keyframes hackathon-ysws-1{
-    from{height: 80px;}
-    to{height: 85px;}
+    from{height: 6vw;}
+    to{height: 6.5vw;}
 }
 
 @keyframes hackathon-ysws-2{
-    to{height: 80px;}
-    from{height: 85px;}
+    to{height: 6vw;}
+    from{height: 6.5vw;}
 }
 
 .experience-border{
@@ -76,60 +76,61 @@
 
 .experience-title{
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
-    transform: translate(-50%, -40%);
-    font-size: 100px;
+    transform: translate(-50%, -45%);
+    font-size: 9vw;
     width: 100%;
 }
 
 .array{
     width: 1%;
-    height:119px;
+    height:20vh;
     background-color: white;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 200px;
+    border-radius: 100vh;
     overflow-x: auto;
+    align-content: center;
 }
 
 .array-border{
     width: 2%;
-    height: 128px;
+    height: 21.5vh;
     background-color: transparent;
     border: 2px white solid;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 200px;
+    border-radius: 100vh;
 }
 
 .array-border-1{
-    top: 55px;
+    top: 8vh;
 }
 
 .array-border-2{
-    bottom: 55px;
+    bottom: 8vh;
 }
 
 .array-1{
-    top: 60px;
+    top: 9vh;
 }
 
 .array-2{
-    bottom: 60px;
+    bottom: 9vh;
 }
 
 .icon{
-    width: 80px;
-    height: 80px;
+    width: 12vh;
+    height: 12vh;
     animation: icon-2 0.5s ease-out;
 }
 
 .icon:hover{
-    width: 87px;
-    height: 87px;
+    width: 14vh;
+    height: 14vh;
     animation: icon-1 0.5s ease-out;
 }
 
@@ -155,7 +156,7 @@
     left: 50%;
     transform: translate(-50%, -45%);
     color: black;
-    font-size: 30px;
+    font-size: 5vh;
     font-family: "M PLUS 1p", sans-serif;
 }
 
@@ -164,7 +165,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 25px;
+    font-size: 2vw;
     width: 100%;
     text-align: center;
 }
@@ -205,22 +206,23 @@
 
 .subholder-2{
     width: 30%;
+    text-align: center;
 }
 
 .subholder-heading{
-    font-size: 28px;
+    font-size: 2.5vw;
     font-family: "Pixelify Sans", sans-serif;
     color: #4F4560;
     text-align: center;
 }
 
 .hackathon-ysws{
-    height: 80px;
+    height: 6vw;
     animation: hackathon-ysws-2 0.5s ease-out;
 }
 
 .hackathon-ysws:hover{
-    height: 85px;
+    height: 6.5vw;
     animation: hackathon-ysws-1 0.5s ease-out;
 }
 
@@ -235,7 +237,7 @@
 }
 
 .other-experience{
-    font-size: 20px;
+    font-size: 1.35vw;
     font-family: "M Plus 1p", sans-serif;
     font-weight: 500;
 }
@@ -251,4 +253,5 @@
     left: 50%;
     transform: translateX(-50%);
     font-family: "M Plus 2";
+    font-size: 2.5vh;
 }
