@@ -18,7 +18,7 @@ let featuredProjects = [
     {
         name: "Project Sekai Weiss Schwarz",
         preview: "/imgs/previews/weissSchwarzSimulator.png",
-        desc: "An online inventory and pulling simulator for Project Sekai EN Weiss Schwarz.",
+        desc: "An online inventory and pulling simulator for Project Sekai EN Weiss Schwarz. One of my favorite project I've made to date.",
         status: "Majority completed-- January 2026",
         time: "37hrs (and maybe more)",
         techStack: {
