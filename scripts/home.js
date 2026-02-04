@@ -15,10 +15,12 @@ function rdrct(link){
 
 
 let names = ["Avishi Sharma", "Aaaaaaaaaaavishi", "Avishi Sharma", "LKJAFSDFjaslkdjfk", "Avishi Sharma", ":P", "meow", "Vishi"];
+let subtitles = ["Studying for the SAT...", "Writing fanfic in class...", "Coding up a storm...", "Screaming over Rui Kamishiro...", "Listening to Vocaloid...", "Sobbing over AMSCO...", "Doing precalc homework...", "Coding again..."];
 
 window.onload = function(){
     typeName();
     nameType = setInterval(typeName, 5000);
+    document.getElementById("greetingMsg").innerText = subtitles[randint(0, subtitles.length)];
 }
 
 function typeName(){ //types random stuff chosen from the array
