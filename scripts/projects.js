@@ -16,6 +16,19 @@ function newTabRdrct(link){
 
 let featuredProjects = [
     {
+        name: "Project Sekai Weiss Schwarz",
+        preview: "/imgs/previews/weissSchwarzSimulator.png",
+        desc: "An online inventory and pulling simulator for Project Sekai EN Weiss Schwarz.",
+        status: "Majority completed-- January 2026",
+        time: "37hrs (and maybe more)",
+        techStack: {
+            frontend: "Sveltekit",
+            backend: "Svletekit, MongoDB, Crypto (it's deprecated?!)"
+        },
+        github: `https://github.com/ChuckChuckler/weiss-schwarz-pjsk`,
+        demo: `https://ws-prsk.vercel.app/`
+    },
+    {
         name: "DailyCode",
         preview: "/imgs/previews/dailyCodePreview.png",
         desc: "A web app where a daily (although weekly is more feasible) coding prompt is displayed. Users can create accounts and upload projects that they have made adhering to that prompt (games, websites, anything); they can vote on or comment on others' projects as well.",
@@ -83,6 +96,13 @@ let featuredProjects = [
 ]
 
 let otherProjects = [
+    {
+        name: `"Inspirational" Quote Generator`,
+        preview: "/imgs/otherProjects/inspoQuotes.png",
+        desc: `A simple "inspirational" quote generator that generates wacky, nonsensical, or borderline threatening quotes. All quotes are said by my friends, teachers, or random people I happened to overhear. Made to help me start learning Flutter.\n\nCompleted Dec 2025\n\nTech Stack: Flutter/Dart`,
+        repo: `https://github.com/ChuckChuckler/quote-app`,
+        demo: `https://quote-app-1cdu.vercel.app/`
+    },
     {
         name: "Complexes",
         preview: "/imgs/otherProjects/complexes.png",
