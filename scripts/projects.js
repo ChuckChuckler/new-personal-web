@@ -224,7 +224,7 @@ let otherProjects = [
     },
     {
         name: "TreeAssistant",
-        preview: "/imgs/otherProjects/treeassistant.png",
+        preview: "/imgs/otherProjects/treeAssistant.png",
         desc: "A web app that game-ifies the process of planting trees; it returns nearby places for users to plant trees, and grants XP for each tree planted. 3rd place winner of KuriusHacks March 2024.\n\nCompleted Mar 2024\n\nTech Stack: HTML, CSS, JS; Flask, sqlite3, HEREAPI\n\n*Note, this project no longer works due to the utilized version of HERE's reverse geocoding API being deprecated.",
         repo: "https://github.com/ChuckChuckler/TreeAssistant",
         demo: "https://avishisharma39.pythonanywhere.com/"
