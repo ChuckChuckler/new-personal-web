@@ -18,7 +18,7 @@ let featuredProjects = [
     {
         name: "Project Sekai Weiss Schwarz",
         preview: "/imgs/previews/weissSchwarzSimulator.png",
-        desc: "An online inventory and pulling simulator for Project Sekai EN Weiss Schwarz. One of my favorite project I've made to date.",
+        desc: "An online inventory and pulling simulator for Project Sekai EN Weiss Schwarz. One of my favorite projects I've made to date!",
         status: "Majority completed-- January 2026",
         time: "37hrs (and maybe more)",
         techStack: {
@@ -70,7 +70,7 @@ let featuredProjects = [
     {
         name: "That's Not My Element!",
         preview: "/imgs/previews/notmyelementPreview.png",
-        desc: "A 2D chemistry game based on That's Not My Neighbor! featuring elements from the periodic table.",
+        desc: "A 2D chemistry game based on That's Not My Neighbor! featuring elements from the periodic table. Another one of my favorites!",
         status: "Complete-- Jan 2025",
         time:"10hrs",
         techStack:{
@@ -81,18 +81,18 @@ let featuredProjects = [
         demo: "https://fluffy-sfogliatella-5528a0.netlify.app/main"
     },
     {
-        name: "Matter Classification",
-        preview: "/imgs/previews/classifyPreview.png",
-        desc: "A simple drag-and-drop chemistry game about classifying types of matter.",
+        name: "SillySimpli",
+        preview: "/imgs/otherProjects/sillysimpli.png",
+        desc: "Practice simplifying with radicals with the help of dad jokes-- with every right answer, unlock more letters for the punchline!",
         status: "Complete-- Jan 2025",
-        time:"12hrs",
+        time: "17hrs",
         techStack:{
             frontend: "HTML, CSS, JS",
-            backend: "NodeJS/Express with EJS templating; MongoDB"
+            backend: "Node/Express, EJS, GeminiAPI"
         },
-        github: "https://github.com/ChuckChuckler/matter-classification/tree/main",
-        demo: "https://matter-classification.onrender.com/ "
-    }
+        github: "https://github.com/ChuckChuckler/sillysimpli",
+        demo: "https://sillysimpli-priv.onrender.com/"
+    },
 ]
 
 let otherProjects = [
@@ -130,13 +130,6 @@ let otherProjects = [
         desc: "A 2D website game where you play as an astronaut escaping a crashing ship, all while practicing your Algebra II solving over C skills.\n\nCompleted Jan 2025\n\nTech Stack: HTML, CSS, JS",
         repo: "https://github.com/ChuckChuckler/astronaut-rescue",
         demo: "https://astronaut-rescue.vercel.app/main.html"
-    },
-    {
-        name: "SillySimpli",
-        preview: "/imgs/otherProjects/sillysimpli.png",
-        desc: "Practice simplifying with radicals with the help of dad jokes-- with every right answer, unlock more letters for the punchline!\n\nCompleted Jan 2025\n\nTech Stack: HTML, CSS, JS; Node/Express, EJS, GeminiAPI",
-        repo: "https://github.com/ChuckChuckler/sillysimpli",
-        demo: "https://sillysimpli-priv.onrender.com/"
     },
     {
         name: "GPACalc",
