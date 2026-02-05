@@ -93,6 +93,19 @@ let featuredProjects = [
         github: "https://github.com/ChuckChuckler/sillysimpli",
         demo: "https://sillysimpli-priv.onrender.com/"
     },
+    {
+        name: "Matter Classification",
+        preview: "/imgs/previews/classifyPreview.png",
+        desc: "A simple drag-and-drop chemistry game about classifying types of matter.",
+        status: "Complete-- Jan 2025",
+        time:"12hrs",
+        techStack:{
+            frontend: "HTML, CSS, JS",
+            backend: "NodeJS/Express with EJS templating; MongoDB"
+        },
+        github: "https://github.com/ChuckChuckler/matter-classification/tree/main",
+        demo: "https://matter-classification.onrender.com/ "
+    },
 ]
 
 let otherProjects = [
